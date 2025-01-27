@@ -5,6 +5,7 @@
     --color-orange: #F06500;
     --color-chrome-yellow: #FFA800;
     --color-royal-flycatcher: #F06500;
+    --color-raven: #0C0B0B;
     /***** font size *****/
     --fs-extra-small: 14px;
     --fs-sm: 18px;
@@ -15,7 +16,12 @@
     --fs-2xl: 96px;
     /***** line height *****/
     --lh-32: 32.4px;
+    --lh-33: 33px;
     --lh-54: 54px;
+    --lh-61: 61.64px;
+    --lh-95: 95.52px;
+    /* opacity */
+    --opacity-70: 70%;
 }
 
 /***** font family *****/
@@ -34,6 +40,10 @@
 
 .color-royal-flycatcher {
     color: var(--color-royal-flycatcher);
+}
+
+.color-raven {
+    background: var(--color-raven);
 }
 
 /***** font size *****/
@@ -70,6 +80,36 @@
     line-height: var(--lh-32);
 }
 
+.lh-33 {
+    line-height: var(--lh-33);
+}
+
 .lh-54 {
     line-height: var(--lh-54);
+}
+
+.lh-61 {
+    line-height: var(--lh-61);
+}
+
+.lh-95 {
+    line-height: var(--lh-95);
+}
+
+/* opacity */
+.opacity-70 {
+    opacity: var(--opacity-70);
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --fs-2xl: 58px;
+        --lh-95: normal;
+    }
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --fs-2xl: 48px;
+    }
 }
