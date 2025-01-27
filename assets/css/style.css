@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./root.css);
 
+.max-w-1320 {
+    max-width: 1320px !important;
+}
+
+/***** navbar *****/
 .menu-lines {
     width: 30px;
     height: 5px;
@@ -26,20 +32,40 @@
     transform: rotate(-43deg);
 }
 
-.py-15 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.py-23 {
+    padding-top: 23px;
+    padding-bottom: 23px;
 }
 
-.blur-20 {
-    background: var(--color-light-black);
+.blur-16 {
+    background: #000000BF;
 }
 
+.gap-32 {
+    gap: 32px;
+}
+
+.nav-btn {
+    padding: 7px 23px 7px 23px;
+    border-radius: 23.5px;
+    border: none;
+    background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher) 100%);
+}
+
+/***** header  *****/
+
+.bg-img-1 {
+    background-image: url(../images/png/header-bg-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/***** max-width *****/
 @media (max-width:991.98px) {
     .nav-link {
         display: flex !important;
         flex-direction: column;
-        background-color: var(--color-light-black) !important;
         width: 100%;
         min-height: 100vh;
         position: fixed;
@@ -49,10 +75,17 @@
         top: 0%;
         transition: all 300ms linear !important;
         z-index: 5;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(90px)
     }
 
     .show-navbar {
         right: 0 !important;
+    }
+}
+
+/***** min-width *****/
+@media (min-width:992px) {
+    .blur-16 {
+        backdrop-filter: blur(16px)
     }
 }

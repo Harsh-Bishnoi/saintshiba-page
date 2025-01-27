@@ -11,23 +11,29 @@
 </head>
 
 <body>
-    <header class="bg-black min-vh-100 d-flex justify-content-center align-items-center">
+    <header class="bg-img-1 min-vh-100 d-flex justify-content-center align-items-center flex-column">
         <nav class="py-23 w-100 blur-16">
-            <div class="container max-w-1140">
+            <div class="container max-w-1320">
                 <div class="d-flex align-items-center justify-content-between w-100">
-                    <a href="">SaintShiba</a>
+                    <a class="text-decoration-none font-family-primary fw-normal fs-lg lh-54 text-light"
+                        href="">Saint<span class="color-orange fw-bold">Shiba</span></a>
                     <ul id="name"
-                        class="d-flex mb-0 align-items-center gap-39 nav-link list-unstyled justify-content-center">
-                        <li><a class="text-decoration-none navbar-link" href="/">Home</a>
+                        class="d-flex mb-0 align-items-center gap-32 nav-link list-unstyled justify-content-center">
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-sm text-light lh-32 "
+                                href="/">Home</a>
                         </li>
-                        <li><a class="text-decoration-none navbar-link" href="/">About</a>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-sm text-light lh-32 "
+                                href="/">About</a>
                         </li>
-                        <li><a class="text-decoration-none navbar-link" href="/">Tokenomics</a></li>
-                        <li><a class="text-decoration-none navbar-link" href="/">How to buy</a>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-sm text-light lh-32 "
+                                href="/">Tokenomics</a></li>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-sm text-light lh-32 "
+                                href="/">How to buy</a>
                         </li>
-                        <li><a class="text-decoration-none navbar-link" href="/">FAQ</a>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-sm text-light lh-32 "
+                                href="/">FAQ</a>
                         </li>
-                        <button class="">Connect Wallet</button>
+                        <button class="nav-btn font-family-primary fw-semibold fs-sm lh-32 text-white">Connect Wallet</button>
                     </ul>
                     <div onclick="navbarbtn()" class="z-5 d-lg-none cursor-pointer">
                         <span class="menu-lines bg-light" id="rotates"></span>
@@ -37,11 +43,16 @@
                 </div>
             </div>
         </nav>
+        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+            <div class="container max-w-1320">
+
+            </div>
+        </div>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="./assets/index.js/app.js"></script>
+    <script src="./assets/index.js/app.js"></script>
 </body>
 
 </html>
