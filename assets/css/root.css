@@ -4,6 +4,7 @@
     /***** color *****/
     --color-chrome-yellow: #FFA800;
     --color-royal-flycatcher: #F06500;
+    --color-white: #FFFFFF;
     --color-raven: #0C0B0B;
     --bg-black-wash: #0C0C0C;
     --bg-chrome-yellow: #FFA800;
@@ -12,6 +13,9 @@
     --bg-thick-purple: #8B35E2;
     --bg-krishna-blue: #00B2FF;
     --bg-neon-fuchsia: #FF4560;
+    --bg-siyah-black: #1D1A1A;
+    --bg-kettle-black: #1D1A1A;
+    --color-black:#000000;
     /***** font size *****/
     --fs-extra-small: 14px;
     --fs-sm: 18px;
@@ -44,6 +48,10 @@
 
 .color-royal-flycatcher {
     color: var(--color-royal-flycatcher);
+}
+
+.bg-siyah-black {
+    background-color: var(--bg-siyah-black);
 }
 
 .color-raven {
