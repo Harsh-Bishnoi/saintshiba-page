@@ -70,10 +70,6 @@
     max-width: 660px;
 }
 
-.mt-59 {
-    margin-top: 59px !important;
-}
-
 .connect-btn {
     padding: 12px 32px 12px 32px;
     border-radius: 33px;
@@ -108,9 +104,6 @@
 }
 
 /* section 1 */
-.mt-32 {
-    margin-top: 32px;
-}
 
 .mt-48 {
     margin-top: 48px;
@@ -179,7 +172,7 @@
     font-weight: 700;
     line-height: 60px;
     text-align: center;
-    color: #000000;
+    color: var(--color-black);
 }
 
 .timeline {
@@ -202,7 +195,7 @@
 }
 
 .mt-59 {
-    margin-top: 59px;
+    margin-top: 59px !important;
 }
 
 .content-box {
@@ -292,10 +285,6 @@
     padding-top: 17px;
 }
 
-.mb-22 {
-    margin-bottom: 22px;
-}
-
 .pb-30 {
     padding-bottom: 30px;
 }
@@ -310,10 +299,6 @@
 
 .mb-32 {
     margin-bottom: 32px;
-}
-
-.mt-62 {
-    margin-top: 62px;
 }
 
 .white-space {
