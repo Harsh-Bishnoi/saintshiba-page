@@ -455,7 +455,8 @@
     position: absolute;
     inset: 0;
     padding: 1px;
-    border-image-source: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%) !important;
+    border-radius: 10px;
+    background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%) !important;
     mask:
         linear-gradient(#000 0 0) content-box,
         linear-gradient(#000 0 0);
