@@ -57,6 +57,26 @@
     background: linear-gradient(90deg, var(--color-royal-flycatcher) 0%, var(--color-chrome-yellow) 100%);
 }
 
+.text-hover {
+    padding: 2px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-hover::before {
+    content: '';
+    background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher) 100%);
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-hover:hover::before {
+    width: 100%;
+}
+
 /***** header  *****/
 
 .bg-img-1 {
@@ -85,6 +105,7 @@
     margin-top: 62px;
 }
 
+/* section 1 */
 .box {
     max-width: 1320px;
     padding: 24px;
@@ -106,12 +127,6 @@
         linear-gradient(#000 0 0);
     mask-composite: exclude;
 }
-
-/* .bg-fox-ellipse{
-    top: 11%;
-    left: 36%;
-} */
-/* section 1 */
 
 .mt-48 {
     margin-top: 48px;
@@ -175,6 +190,11 @@
     border-radius: 50px;
     background: var(--color-white);
     color: var(--color-black);
+}
+
+.bg-fox-ellipse {
+    top: 11%;
+    right: 0;
 }
 
 /* table */
@@ -252,7 +272,7 @@
     padding-left: 2px;
     padding-right: 2px;
     padding-bottom: 2px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
     mask:
         linear-gradient(#000 0 0) content-box,
         linear-gradient(#000 0 0);
@@ -276,7 +296,7 @@
     padding-right: 2px;
     padding-top: 2px;
     padding-left: 2px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
     mask:
         linear-gradient(#000 0 0) content-box,
         linear-gradient(#000 0 0);
@@ -309,7 +329,7 @@
         linear-gradient(#000 0 0);
     mask-composite: exclude;
     backdrop-filter: blur(32px);
-    border-image-source: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
+    background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
 }
 
 /* timeline */
@@ -397,7 +417,7 @@
 
 .footer .accordion-body {
     padding: 0px 16px 16px 16px !important;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.09) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
     backdrop-filter: blur(32px) !important;
 }
 
@@ -415,16 +435,18 @@
 }
 
 .footer .accordion-button:not(.collapsed)::after {
-    background-image: url(../images/svg/up-arrow-svg.svg);
+    background-image: url(../images/svg/down-arrow-svg.svg);
     background-position: center;
     background-size: contain;
-    transform: rotate(0);
+    transform: rotate(180deg);
 }
 
 .footer .accordion-button::after {
     background-image: url(../images/svg/down-arrow-svg.svg);
     background-position: center;
     background-size: contain;
+    height: 7px;
+    width: 11px;
 }
 
 .mt-32 {
@@ -433,10 +455,6 @@
 
 .mt-73 {
     margin-top: 73px;
-}
-
-.box-3 {
-    position: relative;
 }
 
 .box-3::before {
@@ -457,6 +475,14 @@
 }
 
 /***** max-width *****/
+
+@media (max-width:1499.98px) {
+    .fox-img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 @media (max-width:991.98px) {
     .sec-3-img {
         position: unset;
@@ -530,5 +556,12 @@
 @media (min-width:1200px) {
     .box {
         transform: translateY(-125px);
+    }
+}
+
+@media (min-width:1500px) {
+    .fox-img {
+        margin-top: 18px;
+        margin-left: 87px;
     }
 }
